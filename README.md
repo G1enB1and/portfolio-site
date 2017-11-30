@@ -25,7 +25,7 @@ Must contain at least four images with associated text, logo, heading text,
 paragraph text, and customized styles.
 
 ## License
-MIT License can be found [here](license.md).
+MIT License can be found [here](LICENSE).
 
 ## Credits
 Glen Bland
