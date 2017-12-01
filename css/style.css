@@ -1,1 +1,95 @@
-css
+/* comment */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #2d3c49;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    color: #2d3c49;
+}
+
+h1 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+header, nav, footer, section, article, div {
+    box-sizing: border-box;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    height: 4px;
+    /* Set the hr color */
+    color: #7d97ad; /* old IE */
+    background-color: #7d97ad; /* Modern Browsers */
+}
+
+.header__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+.header__logo {
+    height: 148px;
+    margin-right: 0px;
+    vertical-align: top;
+    margin-top: 0px;
+    float: left;
+}
+
+.header__name {
+    font-weight: 200;
+    font-size: 6em;
+    margin-top: .3em;
+    margin-right: 32px;
+    margin-bottom: 0px;
+    display: inline-block;
+    float: right;
+}
+
+.header__title {
+    font-weight: 400;
+    font-size: 2em;
+    margin: 0px;
+    margin-right: 36px;
+    display: inline-block;
+    float: right;
+    clear: right;
+}
+
+/*
+.clearfix: after {
+  content: '';
+  clear: both;
+  display: table;
+}
+*/
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    
+}
