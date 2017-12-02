@@ -29,7 +29,7 @@ header, main, nav, footer, section, article, div {
 hr {
     width: 100%;
     border: none;
-    height: 4px;
+    height: 5px;
     margin: 0px;
     color: #7d97ad; /* old IE */
     background-color: #7d97ad; /* Modern Browsers */
@@ -48,17 +48,18 @@ main {
 }
 
 .header__logo {
-    height: 148px;
+    height: 105px;
     margin-right: 0px;
+    margin-left: 18px;
     vertical-align: top;
-    margin-top: 0px;
+    margin-top: 20px;
     float: left;
 }
 
 .header__name {
     font-weight: 200;
     font-size: 6em;
-    margin-top: .3em;
+    margin-top: .2em;
     margin-right: 32px;
     margin-bottom: 0px;
     display: inline-block;
@@ -70,6 +71,7 @@ main {
     font-size: 2em;
     margin: 0px;
     margin-right: 36px;
+    margin-bottom: 10px;
     display: inline-block;
     float: right;
     clear: right;
@@ -118,7 +120,8 @@ ul {
 
 @media screen and (min-width: 960px) {
     main {
-        width:960px;
+        /* stop the main content from growing wider than 960px. This will instead add margin space to the left and right above 960px */
+        width: 960px;
     }
 }
 
@@ -126,7 +129,7 @@ ul {
     .header__name {
         font-weight: 200;
         font-size: 4em;
-        margin-top: .5em;
+        margin-top: .25em;
         margin-right: 32px;
     }
 
@@ -137,9 +140,10 @@ ul {
     }
     
     .header__logo {
-        height: 124px;
+        height: 77px;
         margin-right: 0px;
-        margin-top: 0px;
+        margin-top: 12px;
+        margin-left: 12px;
     }
     
     .feature__header {
@@ -149,6 +153,10 @@ ul {
         margin-left: 24px;
         float: left;
     }
+    
+    hr {
+        height: 4px;
+    }
 
 }
 
@@ -156,7 +164,7 @@ ul {
     .header__name {
         font-weight: 200;
         font-size: 3em;
-        margin-top: .7em;
+        margin-top: .3em;
         margin-right: 32px;
     }
 
@@ -167,9 +175,9 @@ ul {
     }
 
     .header__logo {
-        height: 108px;
-        margin-right: 0px;
-        margin-top: 0px;
+        height: 58px;
+        margin-left: 10px;
+        margin-top: 12px;
     }
     
     .feature__header {
@@ -178,5 +186,9 @@ ul {
         margin-top: 16px;
         margin-left: 24px;
         float: left;
+    }
+    
+    hr {
+        height: 3px;
     }
 }
