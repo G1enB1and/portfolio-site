@@ -18,11 +18,11 @@ h1, h2, h3, h4, h5 {
     color: #2d3c49;
 }
 
-h1 {
+h1, h2 {
     font-family: Impact, Charcoal, sans-serif;
 }
 
-header, nav, footer, section, article, div {
+header, main, nav, footer, section, article, div {
     box-sizing: border-box;
 }
 
@@ -30,13 +30,14 @@ hr {
     width: 100%;
     border: none;
     height: 4px;
-    /* Set the hr color */
+    margin: 0px;
     color: #7d97ad; /* old IE */
     background-color: #7d97ad; /* Modern Browsers */
 }
 
-.container-for-everything {
-    margin: 0 auto; /* this will center the page */
+main {
+    /* this will center the page when width is 960px or greater */
+    margin: 0 auto;
 }
 
 .header__container {
@@ -76,11 +77,23 @@ hr {
 
 .hero__image {
     width: 100%;
-    max-height: 500px;
+    max-height: 450px;
     margin-top: 24px;
+    margin-bottom: 0px;
     vertical-align: top;
     float: left;
     clear: both;
+}
+
+.feature__header {
+    font-weight: 100;
+    font-size: 2.5em;
+    margin-top: 24px;
+    margin-left: 32px;
+    margin-bottom: 0px;
+    display: inline-block;
+    float: left;
+    color: #7d97ad;
 }
 
 /*
@@ -104,16 +117,16 @@ ul {
 }
 
 @media screen and (min-width: 960px) {
-    .container-for-everything {
+    main {
         width:960px;
     }
 }
 
-@media screen and (min-width: 401px) and (max-width: 500px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
     .header__name {
         font-weight: 200;
         font-size: 4em;
-        margin-top: .7em;
+        margin-top: .5em;
         margin-right: 32px;
     }
 
@@ -121,6 +134,20 @@ ul {
         font-weight: 400;
         font-size: 1.3em;
         margin-right: 36px;
+    }
+    
+    .header__logo {
+        height: 124px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    
+    .feature__header {
+        font-weight: 75;
+        font-size: 1.75em;
+        margin-top: 16px;
+        margin-left: 24px;
+        float: left;
     }
 
 }
@@ -143,5 +170,13 @@ ul {
         height: 108px;
         margin-right: 0px;
         margin-top: 0px;
+    }
+    
+    .feature__header {
+        font-weight: 50;
+        font-size: 1.5em;
+        margin-top: 16px;
+        margin-left: 24px;
+        float: left;
     }
 }
