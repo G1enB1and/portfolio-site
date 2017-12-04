@@ -112,12 +112,27 @@ ul {
     margin: 0;
 }
 
-.container {
+.all__features__container {
+    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
 }
 
+.feature__container {
+  flex: 1;
+  width: 100%;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.feature__image {
+    width: 100%;
+    min-width: 200px;
+}
 @media screen and (min-width: 960px) {
     main {
         /* stop the main content from growing wider than 960px. This will instead add margin space to the left and right above 960px */
@@ -138,14 +153,14 @@ ul {
         font-size: 1.3em;
         margin-right: 36px;
     }
-    
+
     .header__logo {
         height: 77px;
         margin-right: 0px;
         margin-top: 12px;
         margin-left: 12px;
     }
-    
+
     .feature__header {
         font-weight: 75;
         font-size: 1.75em;
@@ -153,7 +168,7 @@ ul {
         margin-left: 24px;
         float: left;
     }
-    
+
     hr {
         height: 4px;
     }
@@ -179,7 +194,7 @@ ul {
         margin-left: 10px;
         margin-top: 12px;
     }
-    
+
     .feature__header {
         font-weight: 50;
         font-size: 1.5em;
@@ -187,7 +202,7 @@ ul {
         margin-left: 24px;
         float: left;
     }
-    
+
     hr {
         height: 3px;
     }
