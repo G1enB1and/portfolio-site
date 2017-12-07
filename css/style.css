@@ -4,6 +4,8 @@
 /* TODO: Center Featured Work when page goes to one column. */
 /* TODO Adjust font sizes at various resolutions better. */
 
+/* TODO get rid or margin code and middle feature style and use flex justify-content: space-between with child widths (flex-basis: 30%) that leave space for margin */
+
 
 body, html {
     margin: 0;
@@ -113,18 +115,22 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 30%;
     text-align: center;
     align-items: center;
-    overflow: auto;
+    justify-content: space-between;
 }
 
 .feature__container {
     flex: 1;
     width: 100%;
     min-width: 240px;
+    max-width: 307px;
+    flex-basis: 30%;
     text-align: center;
     font-weight: 100;
     font-size: .9em;
+    margin: auto;
 }
 
 .feature__middle__container {
@@ -136,17 +142,19 @@ main {
     margin-right: 20px;
     font-weight: 100;
     font-size: 1em;
+    margin: auto;
 }
 
 .feature__title {
     text-align: center;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 2em;
 }
 
 .feature__image {
     width: 100%;
-    min-width: 240px;
+    /* min-width: 240px;
+    max-width: 307px; */
     margin-bottom: 10px;
 }
 @media screen and (min-width: 960px) {
