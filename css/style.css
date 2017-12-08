@@ -42,7 +42,7 @@ main {
     margin: 0 auto;
 }
 
-.header__container {
+.header__wrapper {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -89,7 +89,7 @@ main {
     clear: both;
 }
 
-.feature__header {
+.section__title {
     font-weight: 100;
     font-size: 2.4em;
     margin-top: 14px;
@@ -100,7 +100,7 @@ main {
     color: #7d97ad;
 }
 
-.all__features__container {
+.articles__wrapper {
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -110,7 +110,7 @@ main {
     justify-content: space-between;
 }
 
-.feature__container {
+article {
     flex: 1;
     width: 100%;
     min-width: 240px;
@@ -122,20 +122,22 @@ main {
     margin-bottom: 10px;
 }
 
-.feature__title {
+.article__title {
     text-align: center;
     font-weight: 200;
     font-size: 2em;
 }
 
-.feature__image {
+.article__image {
     width: 100%;
     margin-bottom: 10px;
 }
 
 @media screen and (min-width: 960px) {
     main {
-        /* stop the main content from growing wider than 960px. This will instead add margin space to the left and right above 960px */
+        /* stop the main content from growing wider than 960px. 
+        This will instead add margin space to the left and 
+        right above 960px */
         width: 960px;
     }
 }
@@ -161,7 +163,7 @@ main {
         margin-left: 12px;
     }
 
-    .feature__header {
+    .section__title {
         font-weight: 100;
         font-size: 2em;
         margin-top: 14px;
@@ -174,7 +176,7 @@ main {
         height: 4px;
     }
     
-    .feature__container {
+    article {
         margin: 0 auto;
         margin-bottom: 10px;
         max-width: 190px;
@@ -202,7 +204,7 @@ main {
         margin-top: 12px;
     }
 
-    .feature__header {
+    .section__title {
         font-weight: 100;
         font-size: 2em;
         margin-top: 0px;
@@ -218,7 +220,7 @@ main {
         height: 3px;
     }
     
-    .feature__container {
+    article {
         margin: 0 auto;
         margin-bottom: 10px;
         max-width: 100%
