@@ -1,10 +1,3 @@
-/* TODO: Fix Project Two alignment (a few pixels higher than others) */
-/* TODO: Fix Project Two left and right margins at responsive screen widths */
-/*          that transition 3 columns to 2 then 1. */
-/* TODO: Center Featured Work when page goes to one column. */
-/* TODO Adjust font sizes at various resolutions better. */
-
-
 body, html {
     margin: 0;
     padding: 0;
@@ -100,9 +93,9 @@ main {
 .feature__header {
     font-weight: 100;
     font-size: 2.4em;
-    margin-top: 20px;
+    margin-top: 14px;
     margin-left: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     display: inline-block;
     float: left;
     color: #7d97ad;
@@ -115,40 +108,32 @@ main {
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    overflow: auto;
+    justify-content: space-between;
 }
 
 .feature__container {
     flex: 1;
     width: 100%;
     min-width: 240px;
+    max-width: 250px;
     text-align: center;
     font-weight: 100;
     font-size: .9em;
-}
-
-.feature__middle__container {
-    flex: 1;
-    width: 100%;
-    min-width: 240px;
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-weight: 100;
-    font-size: 1em;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .feature__title {
     text-align: center;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 2em;
 }
 
 .feature__image {
     width: 100%;
-    min-width: 240px;
     margin-bottom: 10px;
 }
+
 @media screen and (min-width: 960px) {
     main {
         /* stop the main content from growing wider than 960px. This will instead add margin space to the left and right above 960px */
@@ -179,8 +164,9 @@ main {
 
     .feature__header {
         font-weight: 75;
-        font-size: 1.75em;
-        margin-top: 16px;
+        font-size: 2em;
+        margin-top: 14px;
+        margin-bottom: 14px;
         margin-left: 24px;
         float: left;
     }
@@ -189,11 +175,10 @@ main {
         height: 4px;
     }
     
-    .feature__middle__container {
-        margin-left: 20px;
-        margin-right: 0px;
-        font-weight: 100;
-        font-size: 1em;
+    .feature__container {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        max-width: 190px;
     }
 
 }
@@ -219,21 +204,25 @@ main {
     }
 
     .feature__header {
-        font-weight: 50;
-        font-size: 1.5em;
-        margin-top: 16px;
-        margin-left: 24px;
-        float: left;
+        font-weight: 100;
+        font-size: 2em;
+        margin-top: 0px;
+        margin-left: 0px;
+        float: none;
+        clear: both;
+        display: block;
+        text-align: center;
+        padding-top: 12px;
     }
 
     hr {
         height: 3px;
     }
     
-        .feature__middle__container {
-        margin-left: 0px;
-        margin-right: 0px;
-        font-weight: 100;
-        font-size: 1em;
+    .feature__container {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        max-width: 100%
     }
+
 }
