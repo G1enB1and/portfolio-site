@@ -33,8 +33,7 @@ hr {
     border: none;
     height: 5px;
     margin: 0px;
-    color: #7d97ad; /* old IE */
-    background-color: #7d97ad; /* Modern Browsers */
+    background-color: #7d97ad;
 }
 
 main {
@@ -163,7 +162,7 @@ main {
     }
 
     .feature__header {
-        font-weight: 75;
+        font-weight: 100;
         font-size: 2em;
         margin-top: 14px;
         margin-bottom: 14px;
