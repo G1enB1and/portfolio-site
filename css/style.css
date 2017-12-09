@@ -1,3 +1,12 @@
+/* declaring custom color variables in root is the industry standard common practice, but due to a known bug with linter css validation tool it will throw false errors, so don't use variables for classwork that requires css validation through linter. */
+
+/* :root { /* define custom color variables so they can be changed
+    easier in the future if needed. Use var(--variable-name). */
+/*    --primary-color: #2d3c49; /* dark bluish grey */
+/*    --secondary-color: #7d97ad; /* medium bluish grey */
+/*    --third-color: #02b3e4; /* medium light blue */
+/* } */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -8,11 +17,13 @@ body, html {
 body {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 12px;
+    /* color: var(--primary-color); */
     color: #2d3c49;
 }
 
 h1, h2, h3, h4, h5 {
     margin: 0;
+    /* color: var(--primary-color); */
     color: #2d3c49;
 }
 
@@ -33,12 +44,13 @@ hr {
     border: none;
     height: 5px;
     margin: 0px;
-    background-color: #7d97ad;
+    /* background-color: var(--secondary-color); */
+    color: #7d97ad;
 }
 
 main {
     /* this will center the page when width is 960px or greater.
-    See code in @media section*/
+    See code in @media section for width: 960px */
     margin: 0 auto;
 }
 
@@ -69,7 +81,7 @@ main {
 }
 
 .header__title {
-    font-weight: 400;
+    font-weight: 100; /* thinnest font-weight */
     font-size: 2em;
     margin: 0px;
     margin-right: 36px;
@@ -90,7 +102,7 @@ main {
 }
 
 .section__title {
-    font-weight: 100;
+    font-weight: 100; /* thinnest font-weight */
     font-size: 2.4em;
     margin-top: 14px;
     margin-left: 28px;
@@ -116,7 +128,7 @@ article {
     min-width: 240px;
     max-width: 250px;
     text-align: center;
-    font-weight: 100;
+    font-weight: 100; /* thinnest font-weight */
     font-size: .9em;
     margin: 0;
     margin-bottom: 10px;
@@ -124,7 +136,7 @@ article {
 
 .article__title {
     text-align: center;
-    font-weight: 200;
+    font-weight: 100; /* thinnest font-weight */
     font-size: 2em;
 }
 
@@ -144,14 +156,12 @@ article {
 
 @media screen and (min-width: 508px) and (max-width: 777px) {
     .header__name {
-        font-weight: 200;
         font-size: 4em;
         margin-top: .25em;
         margin-right: 32px;
     }
 
     .header__title {
-        font-weight: 400;
         font-size: 1.3em;
         margin-right: 36px;
     }
@@ -164,7 +174,6 @@ article {
     }
 
     .section__title {
-        font-weight: 100;
         font-size: 2em;
         margin-top: 14px;
         margin-bottom: 14px;
@@ -186,14 +195,12 @@ article {
 
 @media screen and (max-width: 507px) {
     .header__name {
-        font-weight: 200;
         font-size: 3em;
         margin-top: .3em;
         margin-right: 32px;
     }
 
     .header__title {
-        font-weight: 400;
         font-size: 1em;
         margin-right: 34px;
     }
@@ -205,7 +212,6 @@ article {
     }
 
     .section__title {
-        font-weight: 100;
         font-size: 2em;
         margin-top: 0px;
         margin-left: 0px;
