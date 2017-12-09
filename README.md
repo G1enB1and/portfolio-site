@@ -4,7 +4,7 @@ This is Project 2 of Programming Fundamentals and the Web,
 which is Part 1 of the Full Stack Web Developer Nanodegree.
 
 ## Instructions
-Open [index.html](index.html).
+Either Download files and open [index.html](index.html), or view online [here](http://g1enb1and.github.io/portfolio-site/).
 
 ## Assignment
 Make a portfolio site to be used to showcase future assignments.
