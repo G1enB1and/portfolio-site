@@ -45,7 +45,7 @@ hr {
     height: 5px;
     margin: 0px;
     /* background-color: var(--secondary-color); */
-    color: #7d97ad;
+    background-color: #7d97ad;
 }
 
 main {
@@ -56,26 +56,21 @@ main {
 
 .header__wrapper {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     overflow: auto;
 }
 
 .header__logo {
     height: 105px;
-    margin-right: 0px;
-    margin-left: 18px;
+    margin: 20px 0px 0px 18px;
     vertical-align: top;
-    margin-top: 20px;
     float: left;
 }
 
 .header__name {
     font-weight: 200;
     font-size: 6em;
-    margin-top: .2em;
-    margin-right: 32px;
-    margin-bottom: 0px;
+    margin: .2em 32px 0px 0px;
     display: inline-block;
     float: right;
 }
@@ -83,9 +78,7 @@ main {
 .header__title {
     font-weight: 100; /* thinnest font-weight */
     font-size: 2em;
-    margin: 0px;
-    margin-right: 36px;
-    margin-bottom: 10px;
+    margin: 0px 36px 10px 0px;
     display: inline-block;
     float: right;
     clear: right;
@@ -94,8 +87,7 @@ main {
 .hero__image {
     width: 100%;
     max-height: 450px;
-    margin-top: 24px;
-    margin-bottom: 0px;
+    margin: 24px 0px 0px 0px; /* top right bottom left */
     vertical-align: top;
     float: left;
     clear: both;
@@ -104,11 +96,10 @@ main {
 .section__title {
     font-weight: 100; /* thinnest font-weight */
     font-size: 2.4em;
-    margin-top: 14px;
-    margin-left: 28px;
-    margin-bottom: 14px;
+    margin: 14px 0px 14px 28px; /* top right bottom left */
     display: inline-block;
     float: left;
+    /* color: var(--secondary-color); */
     color: #7d97ad;
 }
 
@@ -130,8 +121,7 @@ article {
     text-align: center;
     font-weight: 100; /* thinnest font-weight */
     font-size: .9em;
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0px 0px 10px 0px; /* top right bottom left */
 }
 
 .article__title {
@@ -147,8 +137,8 @@ article {
 
 @media screen and (min-width: 960px) {
     main {
-        /* stop the main content from growing wider than 960px. 
-        This will instead add margin space to the left and 
+        /* stop the main content from growing wider than 960px.
+        This will instead add margin space to the left and
         right above 960px */
         width: 960px;
     }
@@ -157,8 +147,7 @@ article {
 @media screen and (min-width: 508px) and (max-width: 777px) {
     .header__name {
         font-size: 4em;
-        margin-top: .25em;
-        margin-right: 32px;
+        margin: .25em 32px 0px 0px; /* top right bottom left */
     }
 
     .header__title {
@@ -168,23 +157,19 @@ article {
 
     .header__logo {
         height: 77px;
-        margin-right: 0px;
-        margin-top: 12px;
-        margin-left: 12px;
+        margin: 12px 0px 0px 12px; /* top right bottom left */
     }
 
     .section__title {
         font-size: 2em;
-        margin-top: 14px;
-        margin-bottom: 14px;
-        margin-left: 24px;
+        margin: 14px 0px 14px 24px; /* top right bottom left */
         float: left;
     }
 
     hr {
         height: 4px;
     }
-    
+
     article {
         margin: 0 auto;
         margin-bottom: 10px;
@@ -196,8 +181,7 @@ article {
 @media screen and (max-width: 507px) {
     .header__name {
         font-size: 3em;
-        margin-top: .3em;
-        margin-right: 32px;
+        margin: .3em 32px 0px 0px; /* top right bottom left */
     }
 
     .header__title {
@@ -207,14 +191,12 @@ article {
 
     .header__logo {
         height: 58px;
-        margin-left: 10px;
-        margin-top: 12px;
+        margin: 12px 0px 0px 10px; /* top right bottom left */
     }
 
     .section__title {
         font-size: 2em;
-        margin-top: 0px;
-        margin-left: 0px;
+        margin: 0px 0px 12px 0px; /* top right bottom left */
         float: none;
         clear: both;
         display: block;
@@ -225,7 +207,7 @@ article {
     hr {
         height: 3px;
     }
-    
+
     article {
         margin: 0 auto;
         margin-bottom: 10px;
