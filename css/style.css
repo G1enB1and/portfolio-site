@@ -21,18 +21,18 @@ body {
     color: #2d3c49;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2 {
+    font-family: Impact, Charcoal, sans-serif;
     margin: 0;
     /* color: var(--primary-color); */
     color: #2d3c49;
 }
 
-h1, h2 {
-    font-family: Impact, Charcoal, sans-serif;
-}
-
 h3, h4, h5 {
     font-family: Verdana, Geneva, sans-serif;
+    margin: 0;
+    /* color: var(--primary-color); */
+    color: #2d3c49;
 }
 
 header, main, nav, footer, section, article, div {
@@ -46,6 +46,11 @@ hr {
     margin: 0px;
     /* background-color: var(--secondary-color); */
     background-color: #7d97ad;
+}
+
+a {
+    text-decoration: none;
+    color: #02b3e4;
 }
 
 #page__wrapper {
@@ -135,12 +140,40 @@ article {
     margin-bottom: 10px;
 }
 
+footer {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: #2d3c49;
+    color: #02b3e4;
+}
+
+footer h4 {
+    color: #02b3e4;
+}
+
+/* font awesome icons */
+i.fa {
+    font-size: 40px;
+    padding: 5px 5px 0; /* top right-and-left bottom */
+}
+
 @media screen and (min-width: 960px) {
     #page__wrapper {
         /* stop the main content from growing wider than 960px.
         This will instead add margin space to the left and
         right above 960px */
         width: 960px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    /* font awesome icons */
+    i.fa {
+        font-size: 50px;
+        padding: 8px 8px 0; /* top right-and-left bottom */
     }
 }
 
