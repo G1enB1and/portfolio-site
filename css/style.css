@@ -48,13 +48,13 @@ hr {
     background-color: #7d97ad;
 }
 
-main {
+#page__wrapper {
     /* this will center the page when width is 960px or greater.
     See code in @media section for width: 960px */
     margin: 0 auto;
 }
 
-.header__wrapper {
+header {
     width: 100%;
     margin: auto;
     overflow: auto;
@@ -103,7 +103,7 @@ main {
     color: #7d97ad;
 }
 
-.articles__wrapper {
+section {
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -136,7 +136,7 @@ article {
 }
 
 @media screen and (min-width: 960px) {
-    main {
+    #page__wrapper {
         /* stop the main content from growing wider than 960px.
         This will instead add margin space to the left and
         right above 960px */

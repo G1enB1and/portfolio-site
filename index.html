@@ -16,44 +16,45 @@
 
   <body>
 
-    <main>
+    <div id="page__wrapper"> <!-- This is used to center the page when wider than 960px -->
 
       <header>
-        <div class="header__wrapper">
-          <img class="header__logo" src="img/udacity-logo.png" alt="Udacity logo">
-          <h1 class="header__name">Glen Bland</h1>
-          <h3 class="header__title">Full Stack Web Developer</h3>
-        </div> <!-- end of header__wrapper -->
-
-        <hr>
+        <img class="header__logo" src="img/udacity-logo.png" alt="Udacity logo">
+        <h1 class="header__name">Glen Bland</h1>
+        <h3 class="header__title">Full Stack Web Developer</h3>
       </header>
 
-      <img class="hero__image" src="img/markus-spiske-357131.jpg" alt="Image of HTML code">
+      <hr>
 
-      <h2 class="section__title">Featured Work</h2>
+      <main role="main">
+        <img class="hero__image" src="img/markus-spiske-357131.jpg" alt="Image of HTML code">
 
-      <div class="articles__wrapper">
-        <article>
-          <img class="article__image" src="img/artem-sapegin-176819.jpg" alt="Picture of Laptop">
-          <h3 class="article__title">Project One</h3>
-          <p class="article">https://github.com/G1enB1and/Project-One</p>
-        </article>
+        <h2 class="section__title">Featured Work</h2>
 
-        <article>
-          <img class="article__image" src="img/michail-sapiton-234263.jpg" alt="Picture of Laptop">
-          <h3 class="article__title">Project Two</h3>
-          <p class="article">https://github.com/G1enB1and/Project-Two</p>
-        </article>
+        <section>
+          <article>
+            <img class="article__image" src="img/artem-sapegin-176819.jpg" alt="Picture of Laptop">
+            <h3 class="article__title">Project One</h3>
+            <p class="article">https://github.com/G1enB1and/Project-One</p>
+          </article>
 
-        <article>
-          <img class="article__image" src="img/aleksi-tappura-445.jpg" alt="Picture of Laptop">
-          <h3 class="article__title">Project Three</h3>
-          <p class="article">https://github.com/G1enB1and/Project-Three</p>
-        </article>
+          <article>
+            <img class="article__image" src="img/michail-sapiton-234263.jpg" alt="Picture of Laptop">
+            <h3 class="article__title">Project Two</h3>
+            <p class="article">https://github.com/G1enB1and/Project-Two</p>
+          </article>
 
-      </div> <!-- end of articles__wrapper -->
+          <article>
+            <img class="article__image" src="img/aleksi-tappura-445.jpg" alt="Picture of Laptop">
+            <h3 class="article__title">Project Three</h3>
+            <p class="article">https://github.com/G1enB1and/Project-Three</p>
+          </article>
 
-    </main>
+        </section>
+
+      </main>
+
+    </div> <!-- end of page__wrapper -->
 
   </body>
 
