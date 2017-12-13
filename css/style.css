@@ -5,10 +5,10 @@ requires css validation through linter. */
 
 /* :root { /* define custom color variables so they can be changed
     easier in the future if needed. Use var(--variable-name). */
-/*    --primary-color: #2d3c49; /* dark bluish grey */
+/*    --primary-color: #294060; /* dark bluish grey */
 /*    --secondary-color: #7d97ad; /* medium bluish grey */
 /*    --third-color: #02b3e4; /* medium light blue */
-/*    --third-color: #355575; /* medium dark blue */
+/*    --fourth-color: #355575; /* medium dark blue */
 /* } */
 
 body {
@@ -19,8 +19,7 @@ body {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 12px;
     /* color: var(--primary-color); */
-    color: #2d3c49;
-    /* color: var(--fourth-color); */
+    color: #294060;
     background-color: #355575;
 }
 
@@ -101,34 +100,6 @@ header {
     margin: 0.3em 32px 0 0; /* top right bottom left */
 }
 
-.fancy__fx { /* clipped image behind name in header*/
-  background-repeat: no-repeat;
-  /* starting position of image to show mostly blue then
-  move up to show an area with code on mouse hover */
-  background-position: -35px 10px center;
-  background-image: url(../img/markus-spiske-357131.jpg);
-  display:inline-block;
-  /* set text as a clipping mask to reveal a hidden image */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* set animation speed for each browser version*/
-  -webkit-transition: all 0.2s ease;
-  -moz-transition:    all 0.2s ease;
-  -o-transition:      all 0.2s ease;
-  -ms-transition:     all 0.2s ease;
-  transition:         all 0.2s ease;
-}
-
-.fancy__fx:hover {
-  /* change background image position to an area with more
-  code on hover */
-  background-position: -15px center;
-  /* change text position on hover for each browser version*/
-  -ms-transform: translateX(0px);
-  -webkit-transform: translateX(0px);
-  transform: translateX(0px);
-}
-
 .header__title {
     font-weight: 100; /* thinnest font-weight */
     font-size: 1em;
@@ -161,7 +132,6 @@ header {
     font-weight: 100; /* thinnest font-weight */
     font-size: 2em;
     margin: 0 0 12px; /* top left-and-right bottom */
-
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -227,6 +197,76 @@ i.fa {
     padding: 5px 5px 0; /* top right-and-left bottom */
 }
 
+@media screen and (min-width: 760px) and (max-width: 839px) {
+    .header__name {
+        font-size: 4em;
+        margin: 0.25em 32px 0 0; /* top right bottom left */
+    }
+
+    .header__title {
+        font-size: 1.3em;
+        margin-right: 36px;
+    }
+
+    .header__logo {
+        height: 77px;
+        margin: 12px 0 0 14px; /* top right bottom left */
+    }
+    
+    .site__description {
+        top: 18px;
+        left: 16px;
+        font-size: 2.7em;
+    }
+
+    .section__title {
+        font-size: 2em;
+        margin: 0 0 14px 0; /* top right bottom left */
+    }
+
+    hr {
+        height: 4px;
+    }
+
+} /* end of @media screen and (min-width: 760px) and (max-width: 839px) */
+
+@media screen and (min-width: 840px) and (max-width: 959px) {
+    .header__name {
+        font-size: 5em;
+        margin: 0.2em 32px 0 0; /* top right bottom left */
+    }
+
+    .header__title {
+        font-size: 1.65em;
+        margin-right: 36px;
+    }
+
+    .header__logo {
+        height: 94px;
+        margin: 16px 0 0 20px; /* top right bottom left */
+    }
+
+    hr {
+        height: 5px;
+    }
+    
+    .site__description {
+        top: 20px;
+        left: 18px;
+        font-size: 2.8em;
+    }
+
+    .section__title {
+        font-size: 2.4em;
+        margin: 0 0 14px 0; /* top right bottom left */
+    }
+
+    article {
+        max-width: 250px;
+    }
+
+} /* end of @media screen and (min-width: 840px) and (max-width: 959px) */
+
 @media screen and (min-width: 960px) {
     #page__wrapper {
         /* stop the main content from growing wider than 960px.
@@ -261,11 +301,8 @@ i.fa {
     }
 
     .section__title {
-        font-weight: 100; /* thinnest font-weight */
         font-size: 2.4em;
         margin: 0 0 14px 0; /* top right bottom left */
-        /* color: var(--secondary-color); */
-        color: #7d97ad;
     }
 
     article {
@@ -283,76 +320,3 @@ i.fa {
     }
 
 } /* end of @media screen and (min-width: 960px) */
-
-@media screen and (min-width: 840px) and (max-width: 959px) {
-    .header__name {
-        font-size: 5em;
-        margin: 0.2em 32px 0 0; /* top right bottom left */
-    }
-
-    .header__title {
-        font-size: 1.65em;
-        margin-right: 36px;
-    }
-
-    .header__logo {
-        height: 94px;
-        margin: 16px 0 0 20px; /* top right bottom left */
-    }
-
-    hr {
-        height: 5px;
-    }
-    
-    .site__description {
-        top: 20px;
-        left: 18px;
-        font-size: 2.8em;
-    }
-
-    .section__title {
-        font-weight: 100; /* thinnest font-weight */
-        font-size: 2.4em;
-        margin: 0 0 14px 0; /* top right bottom left */
-        /* color: var(--secondary-color); */
-        color: #7d97ad;
-    }
-
-    article {
-        max-width: 250px;
-    }
-
-} /* end of @media screen and (min-width: 840px) and (max-width: 959px) */
-
-@media screen and (min-width: 760px) and (max-width: 839px) {
-    .header__name {
-        font-size: 4em;
-        margin: 0.25em 32px 0 0; /* top right bottom left */
-    }
-
-    .header__title {
-        font-size: 1.3em;
-        margin-right: 36px;
-    }
-
-    .header__logo {
-        height: 77px;
-        margin: 12px 0 0 14px; /* top right bottom left */
-    }
-    
-    .site__description {
-        top: 18px;
-        left: 16px;
-        font-size: 2.7em;
-    }
-
-    .section__title {
-        font-size: 2em;
-        margin: 0 0 14px 0; /* top right bottom left */
-    }
-
-    hr {
-        height: 4px;
-    }
-
-} /* end of @media screen and (min-width: 760px) and (max-width: 839px) */
