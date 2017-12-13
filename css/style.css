@@ -93,6 +93,34 @@ header {
     margin: 0.3em 32px 0 0; /* top right bottom left */
 }
 
+.fancy__fx { /* clipped image behind name */
+  background-repeat: no-repeat;
+  /* starting position of image to show mostly blue then
+  move up to show an area with code on mouse hover */
+  background-position: -30px 10px center;
+  background-image: url("../img/markus-spiske-357131.jpg");
+  display:inline-block;
+  /* set text as a clipping mask to reveal a hidden image */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* set animation speed for each browser version*/
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  transition:         all 0.2s ease;
+}
+
+.fancy__fx:hover {
+  /* change background image position to an area with more
+  code on hover */
+  background-position: -15px center;
+  /* change text position on hover for each browser version*/
+  -ms-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
 .header__title {
     font-weight: 100; /* thinnest font-weight */
     font-size: 1em;
@@ -193,7 +221,7 @@ i.fa {
 
     .header__title {
         font-size: 2em;
-        margin-right: 36px;
+        margin-right: 32px;
     }
 
     .header__logo {
