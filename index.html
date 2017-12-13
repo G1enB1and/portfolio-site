@@ -30,9 +30,16 @@
 
       <hr>
 
-      <main role="main"> <!-- ARIA role="main" helps screen readers that don't recognize html5 main -->
-        <img class="hero__image" src="img/duy-nguyen-390980.jpg" alt="Image of HTML code">
-
+      <!-- ARIA role="main" helps screen readers that don't recognize html5 main -->
+      <main role="main">
+          
+        <!-- Hero Image -->
+        <div class="hero__image__wrapper">
+          <img class="hero__image" src="img/duy-nguyen-390980.jpg" alt="Image of HTML code">
+          <!-- white text over hero image: site description -->
+          <h2 class="site__description">Portfolio for web projects</h2>
+        </div> <!-- end of hero__image__wrapper -->
+          
         <h2 class="section__title">Featured Work</h2>
 
         <section>

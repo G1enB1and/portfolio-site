@@ -86,7 +86,7 @@ header {
 
 .header__logo {
     height: 58px;
-    margin: 12px 0 0 10px; /* top right bottom left */
+    margin: 12px 0 0 14px; /* top right bottom left */
 }
 
 .header__text__wrapper {
@@ -135,13 +135,26 @@ header {
     margin: 0 34px 10px 0; /* top right bottom left */
 }
 
-.hero__image {
+.hero__image__wrapper {
     width: 100%;
     margin: 24px 0 0; /* top left-and-right bottom */
-    display: flex;
-    flex-flow: row wrap;
-    align-content: flex-start; /* top */
-    justify-content: center;
+    position: relative;
+}
+
+.hero__image {
+    width: 100%;
+    margin: 0;
+}
+
+.site__description { /* this text is positioned over the hero image at the top left */
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-weight: 100; /* thinnest font-weight */
+    font-size: 2.5em;
+    color: white;
+    /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
+    text-shadow: 1px 4px 8px #2d3c49;
 }
 
 .section__title {
@@ -240,12 +253,17 @@ i.fa {
     hr {
         height: 5px;
     }
+    
+    .site__description {
+        top: 24px;
+        left: 24px;
+        font-size: 3em;
+    }
 
     .section__title {
         font-weight: 100; /* thinnest font-weight */
         font-size: 2.4em;
-        margin: 0 0 14px 28px; /* top right bottom left */
-        justify-content: flex-start;
+        margin: 0 0 14px 0; /* top right bottom left */
         /* color: var(--secondary-color); */
         color: #7d97ad;
     }
@@ -285,12 +303,17 @@ i.fa {
     hr {
         height: 5px;
     }
+    
+    .site__description {
+        top: 20px;
+        left: 18px;
+        font-size: 2.8em;
+    }
 
     .section__title {
         font-weight: 100; /* thinnest font-weight */
         font-size: 2.4em;
-        margin: 0 0 14px 28px; /* top right bottom left */
-        justify-content: flex-start; /* left */
+        margin: 0 0 14px 0; /* top right bottom left */
         /* color: var(--secondary-color); */
         color: #7d97ad;
     }
@@ -316,11 +339,16 @@ i.fa {
         height: 77px;
         margin: 12px 0 0 14px; /* top right bottom left */
     }
+    
+    .site__description {
+        top: 18px;
+        left: 16px;
+        font-size: 2.7em;
+    }
 
     .section__title {
         font-size: 2em;
-        justify-content: flex-start; /* left */
-        margin: 0 0 14px 24px; /* top right bottom left */
+        margin: 0 0 14px 0; /* top right bottom left */
     }
 
     hr {
