@@ -6,7 +6,7 @@ requires css validation through linter. */
 /* :root { /* define custom color variables so they can be changed
     easier in the future if needed. Use var(--variable-name). */
 /*    --primary-color: #294060; /* dark bluish grey */
-/*    --secondary-color: #7d97ad; /* medium bluish grey */
+/*    --secondary-color: #7090ad; /* medium bluish grey */
 /*    --third-color: #02b3e4; /* medium light blue */
 /*    --fourth-color: #355575; /* medium dark blue */
 /* } */
@@ -55,7 +55,7 @@ hr {
     height: 3px;
     margin: 0;
     /* background-color: var(--secondary-color); */
-    background-color: #7d97ad;
+    background-color: #7090ad;
     /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
     box-shadow: 1px 6px 8px 3px #2d3c49;
 }
@@ -138,7 +138,7 @@ header {
     justify-content: center;
     padding-top: 12px;
     /* color: var(--secondary-color); */
-    color: #7d97ad;
+    color: #7090ad;
 }
 
 section {
@@ -147,8 +147,8 @@ section {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    align-items: flex-stretch;
-    justify-content: space-evenly;
+    align-items: stretch;
+    justify-content: space-around;
     box-sizing: border-box;
 }
 
