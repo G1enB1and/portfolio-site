@@ -17,8 +17,8 @@
   </head>
 
   <body>
-
-    <div id="page__wrapper"> <!-- This is used to center the page when wider than 960px -->
+    <!-- This is used to center the page when wider than 960px -->
+    <div class="page__wrapper">
 
       <header>
         <img class="header__logo" src="img/udacity-logo.png" alt="Udacity logo">
@@ -39,15 +39,17 @@
           <h2 class="site__description">Portfolio for web projects</h2>
         </div> <!-- end of hero__image__wrapper -->
 
-        <section> <!-- Featured Work section -->
-          <h2 class="section__title">Featured Work</h2>
+        <section class="featured__work">
+          <header>
+            <h2 class="section__title">Featured Work</h2>
+          </header>
           <article> <!-- Project One -->
             <img class="article__image" src="img/artem-sapegin-176819.jpg" alt="Picture of Laptop">
             <h3 class="article__title">Project One</h3>
             <!-- TODO: replace href="#" with a URL when I get one. -->
             <p class="article">
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  https://github.com/G1enB1and/Project-One
+                  Link to GitHub
                 </a>
             </p>
           </article> <!-- end of Project One -->
@@ -58,7 +60,7 @@
             <!-- TODO: replace href="#" with a URL when I get one. -->
             <p class="article">
               <a href="#" target="_blank" rel="noopener noreferrer">
-                https://github.com/G1enB1and/Project-Two
+                Link to GitHub
               </a>
             </p>
           </article> <!-- end of Project Two -->
@@ -69,12 +71,12 @@
             <!-- TODO: replace href="#" with a URL when I get one. -->
             <p class="article">
               <a href="#" target="_blank" rel="noopener noreferrer">
-                https://github.com/G1enB1and/Project-Three
+                Link to GitHub
               </a>
             </p>
           </article> <!-- end of Project Three -->
 
-        </section> <!-- end of Featured Work section -->
+        </section> <!-- end of featured__work section -->
 
         <footer>
           <h4>Follow Glen Bland on social media</h4>

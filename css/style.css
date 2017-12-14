@@ -20,27 +20,17 @@ body {
     font-size: 12px;
     /* color: var(--primary-color); */
     color: #294060;
-    background-color: #355575;
+    background: #355575;
 }
 
-h1 {
-    font-family: Impact, Charcoal, sans-serif;
-    margin: 0;
-}
-
+h1,
 h2 {
     font-family: Impact, Charcoal, sans-serif;
     margin: 0;
 }
 
-h3 {
-    margin: 0;
-}
-
-h4 {
-    margin: 0;
-}
-
+h3,
+h4,
 h5 {
     margin: 0;
 }
@@ -54,9 +44,9 @@ hr {
     border: none;
     height: 3px;
     margin: 0;
-    /* background-color: var(--secondary-color); */
-    background-color: #7090ad;
-    /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+    /* background: var(--secondary-color); */
+    background: #7090ad;
+    /* box-shadow: none|h-offset v-offset blur spread color |inset */
     box-shadow: 1px 6px 8px 3px #2d3c49;
 }
 
@@ -66,12 +56,12 @@ a {
     color: #02b3e4;
 }
 
-#page__wrapper {
+.page__wrapper {
     /* this will center the page when width is 960px or greater.
     See code in @media section for width: 960px */
     margin: 0 auto;
-    background-color: white;
-    /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+    background: white;
+    /* box-shadow: none|h-offset v-offset blur spread color |inset */
     box-shadow: 2px 10px 30px 5px #2d3c49;
 }
 
@@ -117,14 +107,15 @@ header {
     margin: 0;
 }
 
-.site__description { /* this text is positioned over the hero image at the top left */
+/* this text is positioned over the hero image at the top left */
+.site__description {
     position: absolute;
     top: 16px;
     left: 16px;
     font-weight: 100; /* thinnest font-weight */
     font-size: 2.5em;
     color: white;
-    /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
+    /* text-shadow: h-shadow v-shadow blur-radius color */
     text-shadow: 1px 4px 8px #2d3c49;
 }
 
@@ -143,13 +134,16 @@ header {
 
 section {
     margin: 0 auto;
+    box-sizing: border-box;
+}
+
+section.featured__work {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     align-items: stretch;
-    justify-content: space-around;
-    box-sizing: border-box;
+    justify-content: space-around;   
 }
 
 article {
@@ -179,8 +173,8 @@ footer {
     width: 100%;
     padding: 16px;
     text-align: center;
-    /* background-color: var(--primary-color); */
-    background-color: #2d3c49;
+    /* background: var(--primary-color); */
+    background: #2d3c49;
     /* color: var(--secondary-color); */
     color: #02b3e4;
     box-sizing: border-box;
@@ -268,7 +262,7 @@ i.fa {
 } /* end of @media screen and (min-width: 840px) and (max-width: 959px) */
 
 @media screen and (min-width: 960px) {
-    #page__wrapper {
+    .page__wrapper {
         /* stop the main content from growing wider than 960px.
         This will instead add margin space to the left and
         right above 960px */
