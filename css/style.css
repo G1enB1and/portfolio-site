@@ -85,15 +85,14 @@ header {
 }
 
 .header__name {
-    /* font-weight: 100; /* thinnest font-weight */
     font-size: 3em;
     margin: 0.3em 32px 0 0; /* top right bottom left */
 }
 
 .header__title {
-    /* font-weight: 100; /* thinnest font-weight */
+    font-weight: 100; /* thinnest font-weight */
     font-size: 1em;
-    margin: 0 34px 10px 0; /* top right bottom left */
+    margin: 0 32px 10px 0; /* top right bottom left */
 }
 
 /* hero image and text */
@@ -114,7 +113,6 @@ header {
     position: absolute;
     top: 16px;
     left: 16px;
-    /* font-weight: 100; /* thinnest font-weight */
     font-size: 2.5em;
     color: white;
     /* text-shadow: h-shadow v-shadow blur-radius color */
@@ -124,7 +122,6 @@ header {
 /* section */
 
 .section__title {
-    /* font-weight: 100; /* thinnest font-weight */
     font-size: 2em;
     margin: 0 0 12px; /* top left-and-right bottom */
     display: flex;
@@ -164,8 +161,8 @@ article {
 
 .article__title {
     text-align: center;
-    font-weight: 100; /* thinnest font-weight */
     font-size: 2em;
+    font-weight: 100; /* thinnest */
 }
 
 .article__image {
