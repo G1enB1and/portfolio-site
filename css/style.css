@@ -69,7 +69,7 @@ a {
 header {
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start; /* top */
     justify-content: space-between;
 }
 
@@ -85,13 +85,13 @@ header {
 }
 
 .header__name {
-    font-weight: 100; /* thinnest font-weight */
+    /* font-weight: 100; /* thinnest font-weight */
     font-size: 3em;
     margin: 0.3em 32px 0 0; /* top right bottom left */
 }
 
 .header__title {
-    font-weight: 100; /* thinnest font-weight */
+    /* font-weight: 100; /* thinnest font-weight */
     font-size: 1em;
     margin: 0 34px 10px 0; /* top right bottom left */
 }
@@ -114,7 +114,7 @@ header {
     position: absolute;
     top: 16px;
     left: 16px;
-    font-weight: 100; /* thinnest font-weight */
+    /* font-weight: 100; /* thinnest font-weight */
     font-size: 2.5em;
     color: white;
     /* text-shadow: h-shadow v-shadow blur-radius color */
@@ -124,7 +124,7 @@ header {
 /* section */
 
 .section__title {
-    font-weight: 100; /* thinnest font-weight */
+    /* font-weight: 100; /* thinnest font-weight */
     font-size: 2em;
     margin: 0 0 12px; /* top left-and-right bottom */
     display: flex;
@@ -156,7 +156,7 @@ article {
     width: 100%;
     min-width: 240px;
     text-align: center;
-    font-weight: 100; /* thinnest font-weight */
+    /* font-weight: 100; /* thinnest font-weight */
     font-size: 0.9em;
     margin: 0 auto; /* center */
     margin: 0 15px 10px; /* top left-and-right bottom */
