@@ -28,7 +28,8 @@ body {
 
 h1,
 h2 {
-    font: 100% Impact, Charcoal, sans-serif;
+    /*font: 100% Impact, Charcoal, sans-serif; */
+    font: 100% 'Bungee Inline', cursive;
     margin: 0;
 }
 
