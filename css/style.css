@@ -20,7 +20,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    font: 12px Verdana, Geneva, sans-serif;
+    font: 12px 'Metrophobic', sans-serif;
     /* color: var(--primary-color); */
     color: #294060;
     background: #355575;
@@ -29,7 +29,8 @@ body {
 h1,
 h2 {
     /*font: 100% Impact, Charcoal, sans-serif; */
-    font: 100% 'Bungee Inline', cursive;
+    font: 10px/100% 'Bowlby One SC', sans-serif;
+    
     margin: 0;
 }
 
@@ -75,8 +76,8 @@ header {
 }
 
 .header__logo {
-    height: 58px;
-    margin: 12px 0 0 14px; /* top right bottom left */
+    height: 55px;
+    margin: 12px 0 10px 14px; /* top right bottom left */
 }
 
 .header__text__wrapper {
@@ -86,14 +87,15 @@ header {
 }
 
 .header__name {
-    font-size: 3em;
-    margin: 0.3em 32px 0 0; /* top right bottom left */
+    font-size: 2.7em;
+    margin: 0.4em 20px 0 0; /* top right bottom left */
 }
 
 .header__title {
     font-weight: 100; /* thinnest font-weight */
-    font-size: 1em;
-    margin: 0 32px 10px 0; /* top right bottom left */
+    font-size: 1.3em;
+    margin: 0 24px 10px 0; /* top right bottom left */
+    text-align: right;
 }
 
 /* hero image and text */
@@ -114,7 +116,7 @@ header {
     position: absolute;
     top: 16px;
     left: 16px;
-    font-size: 2.5em;
+    font-size: 2em;
     color: white;
     /* text-shadow: h-shadow v-shadow blur-radius color */
     text-shadow: 1px 4px 8px #2d3c49;
@@ -206,18 +208,18 @@ i.fa {
     }
 
     .header__title {
-        font-size: 1.3em;
-        margin-right: 36px;
+        font-size: 1.75em;
+        margin-right: 37px;
     }
 
     .header__logo {
-        height: 77px;
-        margin: 12px 0 0 14px; /* top right bottom left */
+        height: 65px;
+        margin: 12px 0 10px 14px; /* top right bottom left */
     }
     
     .hero__text {
-        top: 18px;
-        left: 16px;
+        top: 20px;
+        left: 20px;
         font-size: 2.7em;
     }
 
@@ -239,13 +241,13 @@ i.fa {
     }
 
     .header__title {
-        font-size: 1.65em;
+        font-size: 2.2em;
         margin-right: 36px;
     }
 
     .header__logo {
-        height: 94px;
-        margin: 16px 0 0 20px; /* top right bottom left */
+        height: 78px;
+        margin: 16px 0 12px 20px; /* top right bottom left */
     }
 
     hr {
@@ -253,8 +255,8 @@ i.fa {
     }
     
     .hero__text {
-        top: 20px;
-        left: 18px;
+        top: 25px;
+        left: 25px;
         font-size: 2.8em;
     }
 
@@ -283,13 +285,13 @@ i.fa {
     }
 
     .header__title {
-        font-size: 2em;
-        margin-right: 32px;
+        font-size: 2.34em;
+        margin-right: 38px;
     }
 
     .header__logo {
-        height: 105px;
-        margin: 22px 0 0 18px; /* top right bottom left */
+        height: 90px;
+        margin: 18px 0 15px 25px; /* top right bottom left */
     }
 
     hr {
@@ -297,9 +299,9 @@ i.fa {
     }
     
     .hero__text {
-        top: 24px;
-        left: 24px;
-        font-size: 3em;
+        top: 35px;
+        left: 28px;
+        font-size: 3.4em;
     }
 
     .section__title {
